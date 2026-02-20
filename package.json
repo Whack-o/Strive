@@ -1,0 +1,18 @@
+{
+  "name": "strive",
+  "version": "0.1.0",
+  "description": "Set a challenge for the month and for the week.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "echo \"Packaging not configured in POC\""
+  },
+  "author": "Zachary Fernandez",
+  "license": "MIT",
+  "dependencies": {
+    "adm-zip": "^0.5.9"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0"
+  }
+}
