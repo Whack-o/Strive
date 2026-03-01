@@ -1,0 +1,7 @@
+body.gold-mode {
+  --text-color: rgb(255, 255, 255);
+  --bg-color: #FFDF00;
+  --title-scale: 1.2;
+  --border-color: white;
+  --congrat-opacity: 100%;
+}

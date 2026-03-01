@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starting Electron App</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/checkbox.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="stylesheet" href="./styles/challengeBoxes.css" />
+    <link rel="stylesheet" href="./styles/goldMode.css" />
 </head>
 <body>
-    <p>Hello, world.</p>
+    <div class="app" style="display:none;">
+        <canvas id="c"></canvas>
+        <h1 class="mainTitle"><span>S</span><span>t</span><span>r</span><span>i</span><span>v</span><span>e</span><span>.</span></h1>
+        <p class="congratText">All done for today! Excellent job.</p>
+        <p>Today is <span id="date"></span></p>
+        <fieldset class="challengeBox monthly" id="monthChallengeBox">
+            <legend>Monthly Challenge</legend>
+            <div id="monthContent">
+                <p class="challengeText"><span id="monthlyChallengeText"></span> every day this week.</p>
+                <label class="custom-checkbox-container">
+                    <input type="checkbox" id="monthlyCheckbox">
+                    <span class="checkmark"></span>
+                    Done for today!
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="challengeBox weekly">
+            <legend>Weekly Challenge</legend>
+            <div id="weekContent">
+                <p class="challengeText"><span id="weeklyChallengeText"></span> every day this week.</p>
+                <label class="custom-checkbox-container">
+                    <input type="checkbox" id="weeklyCheckbox">
+                    <span class="checkmark"></span>
+                    Done for today!
+                </label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="firstLogin" style="display: none;">
+        <p>Loading... 🙂</p>
+    </div>
+    <span class="watermark">Made by Zachary Fernandez.<br>All code is open source! <a href="javascript:void(0);">Check out the respository.</a></span>
+    <script type="module" src="./frontend.js"></script>
 </body>
 </html>

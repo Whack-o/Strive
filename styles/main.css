@@ -1,0 +1,31 @@
+/* ==========================================
+   1. VARIABLES & GLOBAL STYLES
+   ========================================== */
+:root {
+  --text-color: rgb(51, 87, 98);
+  --bg-color: lightblue;
+  --accent: #26ccff;
+  --border-color: rgb(93, 184, 214); 
+  --congrat-opacity: 0%;
+}
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  margin: 10%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s, color 0.25s;
+  user-select: none;;
+}
+
+#c {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
